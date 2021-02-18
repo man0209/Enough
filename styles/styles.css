@@ -1,0 +1,334 @@
+/* 서울한강체 M,L , 여기어때 잘난체  폰트  가져오기*/
+/* @font-face {
+  font-family: "SeoulHangangM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: "hangang-m";
+  src: url("/fonts/SeoulHangangJungM/seoulhangangjungm.eot");
+  src: url("/fonts/SeoulHangangJungM/seoulhangangjungm.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/SeoulHangangJungM/seoulhangangjungm.woff2") format("woff2"),
+    url("/fonts/SeoulHangangJungM/seoulhangangjungm.woff") format("woff"),
+    url("/fonts/SeoulHangangJungM/seoulhangangjungm.ttf") format("truetype"),
+    url("/fonts/SeoulHangangJungM/seoulhangangjungm.svg#seoul-hangang-jung-m")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "hangang-l";
+  src: url("/fonts/SeoulHangangJungL/seoulhangangjungl.eot");
+  src: url("/fonts/SeoulHangangJungL/seoulhangangjungl.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/SeoulHangangJungL/seoulhangangjungl.woff2") format("woff2"),
+    url("/fonts/SeoulHangangJungL/seoulhangangjungl.woff") format("woff"),
+    url("/fonts/SeoulHangangJungL/seoulhangangjungl.ttf") format("truetype"),
+    url("/fonts/SeoulHangangJungL/seoulhangangjungl.svg#seoul-hangang-jung-l")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scroll-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(20px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+/* 폰트랑 크기 지정*/
+
+.font_size_L {
+  font-family: hangang-l, "Nanum Gothic", sans-serif;
+  font-size: 1.4rem;
+  line-height: 35px;
+}
+
+.font_size_M {
+  font-family: hangang-m, "Nanum Gothic", sans-serif;
+  font-size: 1.75em;
+}
+
+.font_jalnan {
+  font-family: yg-jalnan, "Nanum Gothic", sans-serif;
+  font-size: 2rem;
+}
+
+section,
+footer {
+  background-color: rgb(242, 242, 242);
+}
+
+a:link,
+:hover,
+:active,
+:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* 이미지 크기가 너무 커서 max-width, max-height 지정 */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.upper_text {
+  padding: 4em 1em 3em 1em;
+}
+
+.lower_text {
+  padding: 3em 1em 3em 1em;
+}
+
+li {
+  list-style: none;
+}
+
+.img_height {
+  height: 635px;
+  text-align: center;
+}
+
+.box {
+  width: 384px;
+}
+
+/* 헤더 시작 */
+.wrapper {
+  width: 100%;
+  display: flex;
+  background-color: rgb(255, 255, 180);
+  justify-content: space-between;
+  padding: 1em 0 1em 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main_logo {
+  padding: 0 0 0 18.5em;
+}
+
+.main_logo_image {
+  width: 150px;
+  height: 60px;
+}
+.main_menu {
+  padding: 0 18.5em 0 0;
+}
+/* 헤더 끝 */
+
+.main_content {
+  width: 100%;
+}
+
+.container {
+  width: 70vw;
+  margin: 0 auto;
+}
+/* intro 시작 */
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro_left .text_center {
+  padding: 1em 0 0 1em;
+}
+
+.download_link {
+  padding-left: 1em;
+  text-align: left;
+}
+.download_link li {
+  display: inline-block;
+  height: 66px;
+  width: 150px;
+}
+
+/* intro end */
+
+/* nutrients start */
+
+.nutrients {
+  margin: 3em 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* nutri end */
+
+/* ingredient start */
+
+.ingredient {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 0 0 0;
+}
+
+/* ingri end */
+
+/* powder start */
+
+.powder {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 0 0 0;
+}
+
+/* powder end */
+
+/* recipe start */
+
+.recipe {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 0 0 0;
+}
+
+/* recipe end */
+
+/* inform start */
+
+.inform {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 0 0 0;
+}
+
+/* inform end */
+
+/* share start */
+
+.share {
+  display: flex;
+  justify-content: space-around;
+  margin: 3em 0 0 0;
+}
+
+/* share end */
+
+/* last_image start */
+
+.last_image img {
+  margin: 3em 0 0 0;
+  border-radius: 5%;
+}
+
+/* last_image end */
+
+/* footer start */
+
+footer {
+  background-color: rgb(255, 255, 180);
+  text-align: center;
+}
+
+.copyright {
+  margin: 2em 0 2em 2em;
+}
+
+.copyright .company {
+  font-weight: bold;
+}
+
+/* footer end */
+
+/* 768px screen width */
+
+@media screen and (max-width: 768px) {
+  /* header */
+  .scroll-content {
+    opacity: 1;
+  }
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .main_menu {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .main_menu ul {
+    padding-left: 0;
+  }
+  .main_logo {
+    padding-left: 0;
+  }
+  /* intro */
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* nutrients */
+  .nutrients {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  /* ingredient */
+  .ingredient {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* powder */
+  .powder {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  /*recipe */
+  .recipe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* inform */
+
+  .inform {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  /* share */
+
+  .share {
+    flex-direction: column;
+    align-items: center;
+  }
+}
