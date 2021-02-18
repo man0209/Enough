@@ -66,7 +66,7 @@ body {
 }
 /* 폰트랑 크기 지정*/
 
-.font_size_L {
+.font_size_S {
   font-family: SeoulHangangM, "Nanum Gothic", sans-serif;
   font-size: 1.4rem;
   line-height: 35px;
@@ -77,13 +77,23 @@ body {
   font-size: 1.75em;
 }
 
-.font_jalnan {
+.font_jalnan_M {
   font-family: yg-jalnan, "Nanum Gothic", sans-serif;
   font-size: 2rem;
 }
 
-section,
-footer {
+.font_jalnan_L {
+  font-family: yg-jalnan, "Nanum Gothic", sans-serif;
+  font-size: 2.5rem;
+}
+
+.font_size_L {
+  font-family: SeoulHangangM, "Nanum Gothic", sans-serif;
+  font-size: 1.875em;
+  line-height: 50px;
+}
+
+section {
   background-color: rgb(242, 242, 242);
 }
 
@@ -119,7 +129,7 @@ li {
 }
 
 .box {
-  width: 384px;
+  width: 455px;
 }
 
 /* 헤더 시작 */
@@ -161,6 +171,7 @@ li {
 .intro {
   display: flex;
   justify-content: space-around;
+  padding-top: 5em;
 }
 
 .intro_left .text_center {
@@ -250,19 +261,14 @@ li {
 
 /* footer start */
 
-footer {
+.copyright {
   background-color: rgb(255, 255, 180);
   text-align: center;
 }
 
-.copyright {
-  margin: 2em 0 2em 2em;
+.footer__text {
+  margin: 0;
 }
-
-.copyright .company {
-  font-weight: bold;
-}
-
 /* footer end */
 
 /* 768px screen width */
