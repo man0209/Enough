@@ -1,42 +1,16 @@
 /* 서울한강체 M,L , 여기어때 잘난체  폰트  가져오기*/
 @font-face {
-  font-family: "SeoulHangangM";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff")
-    format("woff");
+  font-family: 'SeoulHangangM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
-/* @font-face {
-  font-family: "hangang-m";
-  src: url("/fonts/SeoulHangangJungM/seoulhangangjungm.eot");
-  src: url("/fonts/SeoulHangangJungM/seoulhangangjungm.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/SeoulHangangJungM/seoulhangangjungm.woff2") format("woff2"),
-    url("/fonts/SeoulHangangJungM/seoulhangangjungm.woff") format("woff"),
-    url("/fonts/SeoulHangangJungM/seoulhangangjungm.ttf") format("truetype"),
-    url("/fonts/SeoulHangangJungM/seoulhangangjungm.svg#seoul-hangang-jung-m")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "hangang-l";
-  src: url("/fonts/SeoulHangangJungL/seoulhangangjungl.eot");
-  src: url("/fonts/SeoulHangangJungL/seoulhangangjungl.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/SeoulHangangJungL/seoulhangangjungl.woff2") format("woff2"),
-    url("/fonts/SeoulHangangJungL/seoulhangangjungl.woff") format("woff"),
-    url("/fonts/SeoulHangangJungL/seoulhangangjungl.ttf") format("truetype"),
-    url("/fonts/SeoulHangangJungL/seoulhangangjungl.svg#seoul-hangang-jung-l")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-} */
 
 @font-face {
-  font-family: "yg-jalnan";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
-    format("woff");
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -67,28 +41,28 @@ body {
 /* 폰트랑 크기 지정*/
 
 .font_size_S {
-  font-family: SeoulHangangM, "Nanum Gothic", sans-serif;
+  font-family: SeoulHangangM, 'Nanum Gothic', sans-serif;
   font-size: 1.4rem;
   line-height: 35px;
 }
 
 .font_size_M {
-  font-family: SeoulHangangM, "Nanum Gothic", sans-serif;
+  font-family: SeoulHangangM, 'Nanum Gothic', sans-serif;
   font-size: 1.75em;
 }
 
 .font_jalnan_M {
-  font-family: yg-jalnan, "Nanum Gothic", sans-serif;
+  font-family: yg-jalnan, 'Nanum Gothic', sans-serif;
   font-size: 2rem;
 }
 
 .font_jalnan_L {
-  font-family: yg-jalnan, "Nanum Gothic", sans-serif;
+  font-family: yg-jalnan, 'Nanum Gothic', sans-serif;
   font-size: 2.5rem;
 }
 
 .font_size_L {
-  font-family: SeoulHangangM, "Nanum Gothic", sans-serif;
+  font-family: SeoulHangangM, 'Nanum Gothic', sans-serif;
   font-size: 1.875em;
   line-height: 50px;
 }
@@ -274,7 +248,32 @@ li {
 /* 768px screen width */
 
 @media screen and (max-width: 768px) {
-  /* header */
+  /* font size */
+  .font_jalnan_L {
+    font-size: 2.3rem;
+  }
+
+  .font_size_L {
+    font-size: 1.5em;
+  }
+
+  .upper_text,
+  .lower_text {
+    padding: 0;
+  }
+
+  .intro_left,
+  .ingredient_left,
+  .powder_right,
+  .recipe_left,
+  .inform_right,
+  .share_left,
+  .nutrients_right {
+    padding-left: 7em;
+  }
+
+  /* root */
+
   .scroll-content {
     opacity: 1;
   }
@@ -284,20 +283,22 @@ li {
     padding: 0;
   }
 
+  /* header */
+
   .main_menu {
     margin: 0 auto;
     padding: 0;
   }
-  .main_menu ul {
-    padding-left: 0;
-  }
+  .main_menu ul,
   .main_logo {
     padding-left: 0;
   }
+
   /* intro */
   .intro {
     flex-direction: column;
     align-items: center;
+    padding-top: 0;
   }
 
   /* nutrients */
@@ -336,5 +337,53 @@ li {
   .share {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main_logo_image {
+    height: 50px;
+  }
+
+  .main_menu {
+    height: 30px;
+    font-size: 12px;
+  }
+  .img_height {
+    height: 100%;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .intro_left,
+  .ingredient_left,
+  .powder_right,
+  .recipe_left,
+  .inform_right,
+  .share_left,
+  .nutrients_right {
+    padding-left: 0em;
+  }
+
+  .font_size_S {
+    font-size: 1.3rem;
+  }
+
+  .font_size_M {
+    font-size: 1.3em;
+  }
+
+  .font_jalnan_M {
+    font-size: 2rem;
+  }
+
+  .font_jalnan_L {
+    font-size: 1.5rem;
+  }
+
+  .font_size_L {
+    font-size: 1.15em;
   }
 }
